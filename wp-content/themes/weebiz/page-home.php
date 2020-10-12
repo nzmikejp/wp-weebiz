@@ -10,17 +10,25 @@
             } // end while
         ?>
 
-        <div class="row mtb-50">
+        <!-- Features -->
+        <div class="container features">
+        
+        <div class="page-header-title">
+            <h2 class="heading-title text-center">Features</h2>
+        </div>
+
+        <div class="features-wrap">
+            <div class="row">
             <?php
 
-                $args = array('post_type' => 'service');
+                $args = array('post_type' => 'feature');
                 // The Query
                 $the_query = new WP_Query( $args );
                 
                 // The Loop
                 while ( $the_query->have_posts() ) {
                     $the_query->the_post();
-                    get_template_part('partials/content', 'service');
+                    get_template_part('partials/content', 'feature');
                 }
 
                 /* Restore original Post Data */
@@ -30,4 +38,8 @@
         </div>
 
     </div>
+
+        
+
+</div>
 <?php get_footer()?>

@@ -2,6 +2,21 @@
 
 function register_resource() {
     register_nav_menu('main-menu', 'Main Menu' );
+    
+    //--- Register post types
+    $args = array(
+        'public'    => true,
+        'label'     => 'Services',
+    );
+    register_post_type( 'service', $args );
+   
+    //--- Register post types
+    $args = array(
+        'public'    => true,
+        'label'     => 'Features',
+    );
+    register_post_type( 'feature', $args );
+
 }
 add_action( 'init', 'register_resource' );
 
