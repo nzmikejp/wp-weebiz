@@ -2,3 +2,7 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.slide-text p {
+    color: white;
+}

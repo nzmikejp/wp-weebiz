@@ -7,6 +7,7 @@ function register_resource() {
     $args = array(
         'public'    => true,
         'label'     => 'Services',
+        'menu_icon' => 'dashicons-admin-generic'
     );
     register_post_type( 'service', $args );
    
@@ -14,8 +15,25 @@ function register_resource() {
     $args = array(
         'public'    => true,
         'label'     => 'Features',
+        'menu_icon' => 'dashicons-format-image'
     );
     register_post_type( 'feature', $args );
+
+    //--- Slider
+    $args = array(
+        'public'    => true,
+        'label'     => 'Slide',
+        'menu_icon' => 'dashicons-format-gallery'
+    );
+    register_post_type( 'slide', $args );
+    
+    //--- Team Members
+    $args = array(
+        'public'    => true,
+        'label'     => 'Profiles',
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+    );
+    register_post_type( 'profile', $args );
 
 }
 add_action( 'init', 'register_resource' );

@@ -1,45 +1,37 @@
 <?php get_header()?>
+
+    <!-- light slider -->
+    <?php get_template_part('slider')?>
+
     <!-- Features -->
-    <div class="container index">
-       
-        <!-- content-index.php -->
-        <?php 
-            while ( have_posts() ) {
-                the_post(); 
-                get_template_part('partials/content', 'index');
-            } // end while
-        ?>
+    <?php get_template_part('features')?>
 
-        <!-- Features -->
-        <div class="container features">
-        
-        <div class="page-header-title">
-            <h2 class="heading-title text-center">Features</h2>
-        </div>
-
-        <div class="features-wrap">
-            <div class="row">
+    <!-- Team Members -->
+    <div class="container team">
+      <div class="page-header-title">
+        <h2 class="heading-title text-center">Team Members</h2>
+      </div>
+      <div class="team-members mtb-50">
+        <div class="row">
             <?php
 
-                $args = array('post_type' => 'feature');
+                $args = array('post_type' => 'profile');
                 // The Query
                 $the_query = new WP_Query( $args );
-                
+
                 // The Loop
                 while ( $the_query->have_posts() ) {
                     $the_query->the_post();
-                    get_template_part('partials/content', 'feature');
+                    get_template_part('partials/content', 'profile');
                 }
 
                 /* Restore original Post Data */
                 wp_reset_postdata();
 
             ?>
+            </div>
         </div>
-
     </div>
 
-        
 
-</div>
 <?php get_footer()?>

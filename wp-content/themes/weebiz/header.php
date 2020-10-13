@@ -9,7 +9,7 @@
   <meta name="keywords" content="ui kit">
   <meta name="author" content="UIdeck">
 
-  <title>Headers - Helium Bootstrap 4 UI Kit</title>
+  <title>This is our Weebiz Template</title>
 
   <!-- CSS Files -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.carousel.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/owl.theme.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/responsive.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/custom.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
   
 
   <!-- Fonts icons -->

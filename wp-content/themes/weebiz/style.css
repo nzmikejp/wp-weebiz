@@ -13,3 +13,13 @@ Text Domain: weebiz
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+
+.top_search_icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slide-text p {
+    color: white;
+}
