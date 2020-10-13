@@ -17,7 +17,7 @@
         </figure>
         <div class="info">
         <h2>
-            <?php the_title()?>
+            <a href="<?php the_permalink()?>"><?php the_title()?></a>
         </h2>
         <p>
             <?php the_field('position')?>

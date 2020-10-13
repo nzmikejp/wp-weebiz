@@ -23,3 +23,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .slide-text p {
     color: white;
 }
+
+.content-white p {
+    color: inherit;
+    font-size: inherit;
+}
