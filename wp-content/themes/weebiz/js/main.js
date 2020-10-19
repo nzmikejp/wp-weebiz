@@ -50,3 +50,10 @@
       });   
       $('#image-slider').find('.owl-prev').html('<i class="fa fa-angle-left"></i>');
       $('#image-slider').find('.owl-next').html('<i class="fa fa-angle-right"></i>');
+
+      $(document).ready(function() {
+        //MixitUp
+        $(function() {
+          $('#portfolio').mixItUp();
+        });
+      });

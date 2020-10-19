@@ -34,6 +34,23 @@ function register_resource() {
         'menu_icon' => 'dashicons-buddicons-buddypress-logo'
     );
     register_post_type( 'profile', $args );
+    
+    //--- Projects
+    $args = array(
+        'public'    => true,
+        'label'     => 'Projects',
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+    );
+    register_post_type( 'project', $args );
+
+    //--- Custom Taxonomy
+    $args = array(
+        'label'        => 'Type',
+        'public'       => true,
+        'hierarchical' => true,
+        'show_in_nav_menus' => true,
+    );
+    register_taxonomy( 'type', 'project', $args );
 
 }
 add_action( 'init', 'register_resource' );
